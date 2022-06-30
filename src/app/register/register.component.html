@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form_container">
+        <div class="title">
+            <p>Registration</p>
+        </div>
+        <Form class="form" [formGroup]="formGroup1" (ngSubmit)="SignUp()">
+            <input type="name" placeholder="Enter Name" formControlName="name" >
+            <input type="email" placeholder="Username" formControlName="email" >
+            <input type="password" placeholder="Password" formControlName="password">
+            <button class="button" routerLink="">Login</button>    
+            <button class="button1" type="submit">Register</button>    
+         </Form>
+    </div>
+</body>
+</html>
